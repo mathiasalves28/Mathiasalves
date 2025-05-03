@@ -1,0 +1,72 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.cta a {
+  background: #00aaff;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.character {
+  text-align: center;
+  margin: 2rem 0;
+}
+.character img {
+  width: 180px;
+  border-radius: 1rem;
+}
+.testimonials {
+  background: #111;
+  padding: 2rem 1rem;
+}
+.testimonial {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: #222;
+  border-left: 4px solid #00aaff;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  padding: 2rem;
+}
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+}
+form input, form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+form button {
+  background: #00aaff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
