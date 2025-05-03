@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gestão Viva</title>
+  <title>Gestão Viva - Mathias Alves</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <video autoplay muted loop id="bg-video" style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;opacity:0.2;">
     <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/TimeLapse_Clouds_1.mp439192.webm" type="video/webm">
   </video>
+
   <header>
     <h1 id="typed-text">Descubra como ter uma Gestão Viva pode mudar seus Resultados!</h1>
     <p>Aprenda a usar histórias para vender suas ideias, seus produtos e sua imagem.</p>
@@ -21,34 +21,89 @@
       <a href="https://www.linkedin.com/in/mathiasalves/" target="_blank">Conecte-se no LinkedIn</a>
     </div>
   </header>
+
   <div class="character">
     <p>“Se você não conta histórias, você está deixando dinheiro na mesa.”</p>
   </div>
+
   <section class="testimonials">
     <h2>O que dizem nossos clientes</h2>
     <div class="testimonial">
-        <p>"Antes da consultoria com o Mathias, nossa equipe estava afogada em processos burocráticos. Em poucas semanas, conseguimos reduzir retrabalho em 40% e dobrar nossa produtividade. A clareza, didática e visão estratégica dele são fora da curva!"</p>
+      <p>"Antes da consultoria com o Mathias, nossa equipe estava afogada em processos burocráticos. Em poucas semanas, conseguimos reduzir retrabalho em 40% e dobrar nossa produtividade. A clareza, didática e visão estratégica dele são fora da curva!"</p>
       <span>— Carlos Henrique, Gerente de Operações</span>
     </div>
-
     <div class="testimonial">
       <p>"A metodologia Lean parecia complexa demais... até o Mathias entrar em cena. Ele transformou o chão de fábrica com soluções simples e práticas. Em 90 dias, reduzimos desperdícios em mais de R$ 100 mil. Resultado real, sem enrolação!"</p>
       <span>— Juliana Costa, Diretora Industrial </span>
     </div>
-
     <div class="testimonial">
       <p>"A palestra do Mathias virou assunto da empresa por dias. Ele conecta histórias com propósito e provoca reflexões profundas. Vi líderes mais engajados e colaboradores mais inspirados no dia seguinte!"</p>
       <span>— Roberto Lima, Coordenador de RH</span>
     </div>
   </section>
+
   <section>
-    <form>
-      <h3>Receba dicas exclusivas por e-mail</h3>
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu melhor e-mail" required />
-      <button type="submit">Cadastrar</button>
+    <form onsubmit="enviarParaWhatsApp(event)">
+      <h3>Agende sua consultoria, palestra ou treinamento</h3>
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="email" id="email" placeholder="Seu e-mail" required />
+      <input type="text" id="interesse" placeholder="Qual serviço você deseja?" required />
+      <button type="submit">Agendar via WhatsApp</button>
     </form>
+
+    <script>
+      function enviarParaWhatsApp(event) {
+        event.preventDefault();
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const interesse = document.getElementById("interesse").value;
+        const mensagem = `Olá, meu nome é ${nome}, e-mail: ${email}. Tenho interesse em: ${interesse}`;
+        const url = `https://wa.me/5592981412379?text=${encodeURIComponent(mensagem)}`;
+        window.open(url, "_blank");
+      }
+    </script>
   </section>
+
+  <section>
+    <h2>Ou agende direto na minha agenda:</h2>
+    <a href="https://calendar.app.google/j4WcykUjryKSgkPd7" target="_blank">
+      <button style="padding:10px 20px; font-size:1rem;">Agendar no Google Agenda</button>
+    </a>
+  </section>
+
+  <section>
+    <h2>Quem Sou</h2>
+    <p>
+      Sou um gestor com mais de 10 anos de experiência em liderança de equipes, gestão de processos industriais, logística e recursos humanos. Minha paixão é transformar ambientes produtivos e pessoas, unindo estratégia, método e propósito.
+    </p>
+    <p>
+      Acredito que grandes resultados nascem de processos bem definidos e de pessoas inspiradas. Por isso, ao longo da minha trajetória, especializei-me em Lean Manufacturing, WCM, PCP, desenvolvimento de indicadores e programas de melhoria contínua, sempre com foco em performance sustentável e cultura de alto desempenho.
+    </p>
+    <p>
+      Já atuei em empresas de grande porte, capacitei centenas de profissionais em cursos técnicos e comportamentais (Soft Skills, Liderança, Qualidade, PCP, entre outros), e fui premiado diversas vezes por resultados expressivos em melhoria contínua e engajamento de equipes.
+    </p>
+    <p>
+      Hoje, meu propósito é levar soluções práticas e inspiradoras para quem busca excelência operacional, cultura forte e equipes mais humanas e eficientes.
+    </p>
+    <h3>📌 Expertises:</h3>
+    <ul>
+      <li>Liderança estratégica e desenvolvimento de equipes</li>
+      <li>Lean Manufacturing, Seis Sigma, WCM e PCP</li>
+      <li>Treinamentos corporativos (Soft Skills, Qualidade, Logística)</li>
+      <li>Gestão de RH, estoque, logística e produção</li>
+      <li>Implantação de indicadores e programas de melhoria contínua</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Serviços Prestados</h2>
+    <p>Consultorias, Palestras, Treinamentos, Desenvolvimento Profissional.</p>
+  </section>
+
+  <section>
+    <img src="Logo.png" alt="Logo Mathias Alves" style="max-width: 200px; display: block; margin: 0 auto; padding: 30px 0;">
+  </section>
+
   <footer>
     © 2025 Mathias Alves • Todos os direitos reservados.
   </footer>
