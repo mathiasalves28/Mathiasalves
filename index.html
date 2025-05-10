@@ -93,8 +93,52 @@
 <section class="produtos" style="padding: 3rem 1rem; background: #121212;">
   <h2 style="text-align: center; color: #00aaff; margin-bottom: 2rem;">Nossos Produtos</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+<style>
+  .carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
 
-    <!-- Produto 1 -->
+  .carrossel-inner {
+    display: flex;
+    width: 400%;
+    animation: slide 16s infinite;
+  }
+
+  .carrossel img {
+    width: 100%;
+    height: auto;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+  }
+</style>
+
+<div class="carrossel">
+  <div class="carrossel-inner">
+    <img src="imagens/curso-analise-causa-raiz.jpg" alt="Curso Análise de Causa Raiz">
+    <img src="imagens/gestao-eficaz.jpg" alt="E-book Gestão Eficaz">
+    <img src="imagens/capa-de-livro.jpg" alt="E-book Onde Queremos Chegar">
+    <img src="imagens/kit-4-ebooks.jpg" alt="Kit Domine suas Emoções">
+  </div>
+</div>
+   
+
+ <!-- Produto 1 -->
 <div style="background: #1e1e1e; border-radius: 12px; padding: 1rem; max-width: 250px; text-align: center;">
   <img src="Curso Análise de Causa Raiz/200x120?text=Curso+Análise+de+Causa+Raiz" alt="Curso Análise de Causa Raiz" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
   <h3 style="color: white;">Curso Análise de Causa Raiz</h3>
